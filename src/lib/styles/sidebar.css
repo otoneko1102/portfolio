@@ -1,0 +1,109 @@
+.sidebar-toggle {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-right: 100px;
+  background-color: transparent;
+  color: #ffffff;
+  height: 100%;
+  transform: translateX(200px);
+  transition: transform 0.3s ease;
+  border: none;
+  z-index: 1001;
+}
+
+.sidebar-toggle.closed {
+  padding-right: 40px;
+  transform: translateX(0);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 240px;
+  height: 100vh;
+  background: linear-gradient(to bottom, #4d667e, #808080);
+  color: #ffffff;
+  border-right: 5px solid;
+  border-image: linear-gradient(to bottom, var(--gcolor-box-top), var(--gcolor-box-bottom)) 1;
+  box-sizing: border-box;
+  transform: translateX(0%);
+  transition: transform 0.3s ease;
+}
+
+.sidebar .menu-title {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to right, var(--gcolor-moon-side), var(--gcolor-moon-center), var(--gcolor-moon-side));
+  color: #ffffff;
+  border: none;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(to left, var(--gcolor-box-top), var(--gcolor-box-bottom)) 1;
+  padding: 10px;
+  text-align: center;
+  cursor: none;
+  pointer-events: none;
+}
+
+.sidebar .menu-title .text-gradient {
+  filter: contrast(1.2) drop-shadow(2px 2px 2px #ffffff);
+}
+
+.sidebar ul li {
+  position: relative;
+  width: 80%;
+  height: 30px;
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  /* Loaded */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity calc(var(--move-time) / 3) ease, transform var(--move-time) ease;
+}
+
+.sidebar ul li.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sidebar ul li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 90%;
+  background: radial-gradient(
+    ellipse at center,
+    var(--gcolor-moon-center) 0%,
+    var(--gcolor-moon-side) 60%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.sidebar ul li a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.sidebar ul li:hover {
+  filter: brightness(0.7);
+}
+
+@media (max-width: 700px) {
+  .sidebar-toggle {
+    display: block;
+  }
+
+  .sidebar.closed {
+    transform: translateX(-85%);
+  }
+}
