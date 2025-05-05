@@ -112,7 +112,9 @@ main.loaded * {
 .link-icon-wrapper {
   --link-icon-size: 30px;
   width: var(--link-icon-size);
+  min-width: var(--link-icon-size);
   height: var(--link-icon-size);
+  min-height: var(--link-icon-size);
   background: linear-gradient(to bottom, var(--gcolor-box-top), var(--gcolor-box-bottom));
   border: 3px solid #ffffff;
   border-radius: 8px;

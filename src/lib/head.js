@@ -23,7 +23,7 @@ export default {
     { name: "twitter:title", content: data.title },
     { name: "twitter:description", content: data.description },
     { name: "twitter:image", content: `https://${data.domain}/icon.png` },
-    { name:"twitter:site", content: "@rin_montblank" },
+    { name:"twitter:site", content: "@rin_pineapple" },
     // Other
     { name: "viewport", content: "width=device-width, intial-scale=1, maximum-scale=1, user-scalable=0" }
   ]
