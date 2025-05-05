@@ -109,4 +109,9 @@
 
 <main class="{loaded ? 'loaded' : ''}">
   <slot />
+  <!-- View Count -->
+  <div class="box block">
+    <h2>合計閲覧回数</h2>
+    <img class="viewcount" src="https://count.getloli.com/@otoneko1102?theme=booru-jaypee" alt="otoneko1102" />
+  </div>
 </main>
