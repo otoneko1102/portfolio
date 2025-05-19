@@ -109,9 +109,12 @@
 
 <main class="{loaded ? 'loaded' : ''}">
   <slot />
+  <div class="span-border"></div>
   <!-- View Count -->
-  <div class="box block">
-    <h2>合計閲覧回数</h2>
-    <img class="viewcount" src="https://count.getloli.com/@otoneko1102?theme=booru-jaypee" alt="otoneko1102" />
+  <div class="grid">
+    <div class="box block">
+      <h2>合計閲覧回数</h2>
+        <img class="viewcount" src="https://count.getloli.com/@otoneko1102?theme=booru-jaypee" alt="otoneko1102" />
+      </div>
   </div>
 </main>

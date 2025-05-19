@@ -79,6 +79,13 @@ button {
   filter: brightness(1.2) drop-shadow(1px 1px 1px #808080);
 }
 
+.span-border {
+  max-width: 100%;
+  margin: 0 20px;
+  border: none;
+  border-bottom: 5px solid #ffffff;
+}
+
 .viewcount {
   width: 100%;
   height: auto;

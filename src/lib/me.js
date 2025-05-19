@@ -23,13 +23,13 @@ export default {
       tag: "Twitter",
       display: "@rin_pineapple",
       icon: "icons/twitter.svg",
-      url: "https://twitter.com/rin_montblank"
+      url: "https://twitter.com/rin_pineapple"
     },
     {
       tag: "Instagram",
       display: "@otoneko1102",
       icon: "icons/instagram.svg",
-      url: "https://instagram.com/rin_montblank"
+      url: "https://instagram.com/otoneko1102"
     },
     {
       tag: "Zenn",
